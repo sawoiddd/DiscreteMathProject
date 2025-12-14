@@ -44,7 +44,6 @@ class Kruskals:
     def kruskal_mst_optimized(self):
         mst = []
         counter = 0
-        print(f"DEBUG: Parent len: {len(self.dsu.parent)}, Target MST: {len(self.dsu.parent) - 1}")
         for weight, ver1, ver2 in self.weight_li:
             counter += 1
 

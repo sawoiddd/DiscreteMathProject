@@ -7,7 +7,7 @@ class Benchmarks:
     def __init__(self):
         self.SIZES = [20, 50, 100, 150, 200]
         self.DENSITIES = [10, 30, 50, 70, 90]
-        self.ITERATIONS = 25
+        self.ITERATIONS = 200
 
         self.results = []
 
@@ -22,8 +22,6 @@ class Benchmarks:
                 mst_optimized_times = []
                 mst_percentages = []
 
-
-                print(f"🔄 Тестую: {n} вершин, щільність {d}%...", end="\r")
 
                 for _ in range(self.ITERATIONS):
                     graph = Graph(n, d)
